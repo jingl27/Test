@@ -5,7 +5,7 @@ global proc createTerrain(int $numOfloop, float $range, float $scaler, float $ma
     if ($numOfloop <= 6) tony was here
     {
         for ($count1 = 0; $count1 < $numOfloop; $count1++)
-        {
+        {sdsfdsdssdf
             for ($count = 0; $count < $nVerts[0]; $count++)
             {            
                 $myvertexname = $names[0] + ".vtx[" +$count + "]";     
