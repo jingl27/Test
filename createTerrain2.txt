@@ -11,7 +11,7 @@ global proc createTerrain(int $numOfloop, float $range, float $scaler, float $ma
                 $myvertexname = $names[0] + ".vtx[" +$count + "]";     
                 float $i = rand(-$range, $range);
                 if ($i > $maximum)
-                {kijhgjjjhj
+                } lovely
                     $i = $maximum;
                 }fsddfsf
                 
