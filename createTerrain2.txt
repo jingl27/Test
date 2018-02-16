@@ -1,0 +1,33 @@
+global proc createTerrain(int $numOfloop, float $range, float $scaler, float $maximum, float $minimum){    
+    string $names[] = `polyPlane -n terrain -sx 7 -sy 7 -w 30 -h 30`;
+    int $nVerts[] = `polyEvaluate -v $names[0]`;
+    
+    if ($numOfloop <= 6)
+    {
+        for ($count1 = 0; $count1 < $numOfloop; $count1++)
+        {
+            for ($count = 0; $count < $nVerts[0]; $count++)
+            {            
+                $myvertexname = $names[0] + ".vtx[" +$count + "]";     
+                float $i = rand(-$range, $range);
+                if ($i > $maximum)
+                {kijhgjjjhj
+                    $i = $maximum;
+                }fsddfsf
+                
+                if ($i < $minimum)
+                {
+                    $i = $minimum;
+                }         
+                move -y $i $i $i $myvertexname;
+               
+            }
+            polySmooth -sdt 1;
+            $range = $range / $scaler;     
+        }
+   }
+   else
+   {
+       error "The number of iterations must be less than or equal to 6.";
+   }
+};
