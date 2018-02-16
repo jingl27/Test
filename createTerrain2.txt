@@ -2,7 +2,7 @@ global proc createTerrain(int $numOfloop, float $range, float $scaler, float $ma
     string $names[] = `polyPlane -n terrain -sx 7 -sy 7 -w 30 -h 30`;
     int $nVerts[] = `polyEvaluate -v $names[0]`;
     
-    if ($numOfloop <= 6)
+    if ($numOfloop <= 6) tony was here
     {
         for ($count1 = 0; $count1 < $numOfloop; $count1++)
         {
